@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('name', 50);
             $table->string('email', 50);
-            $table->text('message');
+            $table->text('text');
+            $table->dateTime('updated_at');
             $table->dateTime('created_at');
         });
     }
